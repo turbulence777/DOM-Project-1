@@ -1,0 +1,66 @@
+/* Styles for the shopping cart container */
+.cart {
+    max-width: 600px;  /* Limits the width of the cart */
+    margin: 0 auto;    /* Centers the cart horizontally on the page */
+    padding: 20px;     /* Adds padding inside the cart */
+    border: 1px solid #ccc;  /* Adds a border around the cart */
+  }
+  
+  /* Styles for the container holding all items */
+  .items {
+    margin-bottom: 20px;  /* Adds space between items */
+  }
+  
+  /* Styles for individual items within the cart */
+  .item {
+    margin-bottom: 20px;  /* Adds space between items */
+    display: flex;        /* Displays items in a row */
+    align-items: center;  /* Aligns items vertically */
+  }
+  
+  /* Styles for the item image */
+  .item-image {
+    width: 100px;         /* Sets the width of the item image */
+    margin-right: 20px;   /* Adds space between the image and item details */
+  }
+  
+  /* Styles for the item details container */
+  .item-details {
+    flex-grow: 1;         /* Allows item details to grow to fill available space */
+  }
+  
+  /* Styles for the controls (e.g., like, quantity, delete) within an item */
+  .item-controls {
+    display: flex;        /* Displays controls in a row */
+    align-items: center;  /* Aligns controls vertically */
+  }
+  
+  /* Common styles for like, quantity, and delete buttons */
+  .like-btn, .quantity-btn, .delete-btn {
+    background-color: transparent;  /* Makes the buttons transparent */
+    border: none;                   /* Removes borders from the buttons */
+    cursor: pointer;                /* Changes cursor to pointer on hover */
+  }
+  
+  /* Styles for the like button */
+  .like-btn {
+    width: 23px;                    /* Sets width of the like button */
+    height: 20px;                   /* Sets height of the like button */
+    /*background-image: url('./img/heart.svg');   Sets background image for the like button */
+    background-size: cover;         /* Scales the background image to cover the button */
+  }
+  
+  /* Styles for the liked state of the like button */
+  .like-btn.liked {
+    background-image: url('./img/heart.svg');  /* Sets background image for liked state */
+  }
+  
+  /* Styles for the quantity indicator */
+  .quantity {
+    margin: 0 5px;  /* Adds space around the quantity indicator */
+  }
+  
+  /* Styles for the total amount */
+  .total {
+    font-weight: bold;  /* Makes the total amount text bold */
+  }
